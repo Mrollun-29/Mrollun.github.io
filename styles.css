@@ -1,0 +1,61 @@
+/*
+8789C0
+
+102E4A
+
+F72585
+
+89A894
+
+B5FFE1
+
+*/
+
+
+/* Constantes de colores para usar */
+
+:root {
+  --color-1: #8789C0;
+  --color-2: #102E4A;
+  --color-3: #F72585;
+  --color-4: #89A894;
+  --color-5: #B5FFE1;
+}
+
+/* Dar formato base a la web, como un reset */
+* {
+
+padding: 0px;
+margin: 0px;
+
+}
+
+.cabecera {
+
+    width: 100%;
+    background-color: #102E4A;
+    min-height: 120px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 7%;
+    
+
+}
+
+
+
+.logo {
+
+    font-size: 2rem;
+    font-weight: 650;
+    color:#F72585;
+    letter-spacing: 3px;
+
+}
+
+.icono {
+
+
+
+}
+
