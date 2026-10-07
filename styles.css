@@ -377,3 +377,95 @@ text-shadow: var(--sombra);
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.9rem;
 }
+
+
+
+
+@media (max-width: 700px) {
+
+    .cabecera {
+
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 15px;
+
+    }
+
+    .logo {
+
+        font-size: 1.5rem;
+
+    }
+
+    .navbar {
+
+
+
+    }
+
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero h1 {
+
+
+        letter-spacing: 4px;
+    }
+
+
+
+
+    .seccion {
+        padding: 60px 15px;
+    }
+    
+
+
+    .platoArticle {
+
+        min-width: 100%;
+    }
+
+    .datosContacto {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .tabla-horario {
+        overflow-x: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .logo {
+        letter-spacing: 2px;
+    }
+
+}
