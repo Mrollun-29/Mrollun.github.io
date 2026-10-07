@@ -203,3 +203,177 @@ text-shadow: var(--sombra);
 }
 
 
+.cartaSeccionCorta {
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 25px;
+
+}
+
+.cartaSeccionCorta h2, .contacto h2 {
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    margin-bottom: 15px;
+
+    color: var(--color-principal);
+
+}
+
+.textoCentrar {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.platosDiv {
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+.platoArticle {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 330px;
+    padding: 30px;
+    border-radius: var(--radio);
+    background-color: var(--color-fondo2);
+    box-shadow: var(--sombra);
+
+
+}
+
+.platoArticle .material-symbols-outlined {
+
+    font-size: 45px;
+    color:var(--color-secundario);
+    margin-bottom: 15px;
+
+}
+
+
+.platoArticle h3 {
+
+
+    margin-bottom: 12px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+
+}
+
+
+.platoArticle p {
+
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.platoArticle strong {
+    font-size: 1.3rem;
+    color: var(--color-secundario);
+}
+
+
+.horario-seccion {
+    max-width: 800px;
+}
+
+
+.tabla-horario {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+
+
+.horario {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-secundario);
+}
+
+
+.horario th {
+
+    padding: 18px;
+    background-color: var(--color-principal);
+    color: white;
+    text-align: left;
+    font-size: 1.1rem;
+
+}
+
+.horario td {
+
+    padding: 15px 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.horario tbody tr:hover {
+    background-color: rgba(247,37,133,0.08);
+}
+
+
+.horario tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.contacto {
+
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--color-principal);
+    color: white;
+
+}
+
+.contacto h2 {
+
+    color: white;
+}
+
+
+.datosContacto {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+
+    margin-top: 35px;
+}
+
+.datosContacto p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.datosContacto .material-symbols-outlined {
+
+    color: var(--color-secundario);
+}
+
+
+.footer {
+
+    padding: 25px;
+    text-align: center;
+    background-color: oklch(12% 0.02 250);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
