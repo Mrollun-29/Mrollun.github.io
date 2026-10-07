@@ -14,7 +14,7 @@
   --color-blancotransparente: rgba(255,255,255, 0.15);
   --color-negrotransparente: rgba(0,0,0,0.15);
 
-  /*Colores con OKLCH*/
+    /*Colores con OKLCH*/
   --color-fondo: oklch(98% 0.01 90);
   --color-fondo2: oklch(94% 0.02 90);
   --color-textos: oklch(25% 0.04 250);
@@ -22,10 +22,27 @@
 
   /*EXTRAS*/
 
-  --sombra: 0 8px 25xp rgba(0,0,0,0.15);
+  --sombra: 0 8px 25px rgba(0,0,0,0.15);
   --radio: 15px;
 
 }
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+
+        --color-fondo: oklch(18% 0.03 250);
+        --color-fondo2: oklch(23% 0.04 250);
+
+        --color-textos: oklch(95% 0.02 90);
+
+        --color-blanco: oklch(100% 0 0);
+
+        --sombra: 0 8px 25px rgb(0 0 0 / 40%);
+    }
+
+}
+
 
 /* Dar formato base a la web, como un reset */
 
@@ -54,7 +71,11 @@ body {
 }
 
 
-
+.seccion {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 25px;
+}
 
 .cabecera {
 
@@ -106,8 +127,19 @@ body {
 
 
 /*HACER NAVBAR*/
+.navbar {
+    display: flex;
+    gap: 30px;
+}
 
 
+.navbar a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
 
 
 .hero {
@@ -117,7 +149,7 @@ body {
     min-height: 70vh;
     padding: 60px 20px;
     text-align: center;
-    background-color: linear-gradient(rgba(16, 46, 74, 0.85), rgba(16, 46, 74, 0.95));
+    background: linear-gradient(rgba(16, 46, 74, 0.85), rgba(16, 46, 74, 0.95));
 }
 
 
@@ -178,6 +210,7 @@ text-shadow: var(--sombra);
 
 
 }
+
 
 
 
@@ -301,7 +334,7 @@ text-shadow: var(--sombra);
 .horario {
     width: 100%;
     border-collapse: collapse;
-    background-color: var(--color-secundario);
+    background-color: var(--color-fondo2);
 }
 
 
@@ -330,6 +363,9 @@ text-shadow: var(--sombra);
     border-bottom: none;
 }
 
+.horario-seccion {
+    max-width: 800px;
+}
 
 .contacto {
 
@@ -369,7 +405,7 @@ text-shadow: var(--sombra);
 }
 
 
-.footer {
+footer {
 
     padding: 25px;
     text-align: center;
@@ -399,8 +435,9 @@ text-shadow: var(--sombra);
 
     .navbar {
 
-
-
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 
@@ -469,3 +506,9 @@ text-shadow: var(--sombra);
     }
 
 }
+
+
+
+
+
+
