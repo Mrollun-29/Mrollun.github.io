@@ -7,6 +7,7 @@
   --color-principal: rgb(16, 46, 74);
   --color-secundario: rgb(247, 37, 133);
   --color-verdegris: rgb(137, 168, 148);
+  --color-grad2: rgb(181, 255, 225);
 
 
   /*RGB pero ahora con transparencia*/
@@ -26,6 +27,7 @@
 
 }
 
+/* Dar formato base a la web, como un reset */
 
 * {
 
@@ -35,44 +37,78 @@ box-sizing: border-box;
 }
 
 
+
+
+
+
 body {
-    min-height: 100vh;
+    min-height: 100vh; 
     font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-textos);
+
 }
 
 
 
 
-
-/* Dar formato base a la web, como un reset */
-
 .cabecera {
 
-    width: 100%;
-    background-color: #102E4A;
-    min-height: 120px;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--color-principal);
+    min-height: 100px;
     padding: 20px 7%;
+    box-shadow: var(--sombra);
     
 
 }
 
 .logo {
 
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 2rem;
-    font-weight: 650;
-    color:#F72585;
+    font-weight: 800;
+    color:var(--color-secundario);
     letter-spacing: 3px;
 
 }
 
-#icono {
+/*Aplicar al primer hijo que es span de logo*/
+.logo>span:first-child {
 
-    height: 50px;
-    width: 50px;
+    background: linear-gradient(90deg, var(--color-secundario), var(--color-grad2));
+
+    background-clip: text;
+    color: transparent;
+
+    text-shadow: var(--sombra);
+
 
 }
+
+
+
+
+.icono {
+
+    font-size: 45px;
+    color: var(--color-secundario)
+}
+
+
+/*HACER NAVBAR*/
+
+
+
 
 .horario thead tr th {
     font-weight: 600;
