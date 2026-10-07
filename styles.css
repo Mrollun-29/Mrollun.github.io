@@ -1,25 +1,29 @@
-/*
-8789C0
-
-102E4A
-
-F72585
-
-89A894
-
-B5FFE1
-
-*/
 
 
 /* Variables de colores para usar tema claro */
 
 :root {
-  --color-principal: #rgb(16,46,74);
-  --color-2: #102E4A;
-  --color-3: #F72585;
-  --color-4: #89A894;
-  --color-5: #B5FFE1;
+    /*Colores RGB*/
+  --color-principal: rgb(16, 46, 74);
+  --color-secundario: rgb(247, 37, 133);
+  --color-verdegris: rgb(137, 168, 148);
+
+
+  /*RGB pero ahora con transparencia*/
+  --color-blancotransparente: rgba(255,255,255, 0.15);
+  --color-negrotransparente: rgba(0,0,0,0.15);
+
+  /*Colores con OKLCH*/
+  --color-fondo: oklch(98% 0.01 90);
+  --color-fondo2: oklch(94% 0.02 90);
+  --color-textos: oklch(25% 0.04 250);
+  --color-blanco: oklch(100% 0 0);
+
+  /*EXTRAS*/
+
+  --sombra: 0 8px 25xp rgba(0,0,0,0.15);
+  --radio: 15px;
+
 }
 
 
