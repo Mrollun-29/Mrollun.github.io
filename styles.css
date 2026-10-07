@@ -192,5 +192,14 @@ text-shadow: var(--sombra);
     font-weight: 700;
     box-shadow: var(--sombra);
 
-    
+
 }
+
+.botonCarta:hover {
+
+    box-shadow: 0 8px 25px rgba(247,37,133,0.5);
+
+
+}
+
+
