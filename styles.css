@@ -12,10 +12,10 @@ B5FFE1
 */
 
 
-/* Constantes de colores para usar */
+/* Variables de colores para usar tema claro */
 
 :root {
-  --color-1: #8789C0;
+  --color-principal: #rgb(16,46,74);
   --color-2: #102E4A;
   --color-3: #F72585;
   --color-4: #89A894;
@@ -23,13 +23,24 @@ B5FFE1
 }
 
 
-/* Dar formato base a la web, como un reset */
 * {
 
 padding: 0px;
 margin: 0px;
-
+box-sizing: border-box;
 }
+
+
+body {
+    min-height: 100vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+/* Dar formato base a la web, como un reset */
 
 .cabecera {
 
